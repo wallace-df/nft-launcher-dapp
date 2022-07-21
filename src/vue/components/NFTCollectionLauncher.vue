@@ -118,7 +118,7 @@
 <script>
 import Wallet from "./Wallet.vue";
 
-import Launcher from "../../js/launcher.js";
+import NFTLauncher from "../../js/launcher.js";
 import Utils from "../../js/utils.js";
 
 export default {
@@ -159,25 +159,6 @@ export default {
             this.handleError("Please enter the collection description.");
             return;
           }
-
-          // FIXME
-             try {
-              let ctx = this;
-              let progressCallback = function(statusMsg) {
-                ctx.status = statusMsg;
-              };
-              this.launchResult = await Launcher.launchNFTCollection(ctx.collectionName, ctx.collectionDescription, {metadataItems: [1]}, Utils.toBaseUnit(ctx.mintPrice, 18).toString(), progressCallback);
-              console.log(this.launchResult);
-              this.loading = false;
-              this.$eventBus.emit("loading", false);
-            } catch(err) {
-              this.handleError(err);
-            }
-
-            if(1==1){
-              return;
-            }
-          // FIXME
 
           if (this.$refs.collectionImage.files.length === 0) {
             this.handleError("Please select the collection front-image.");
@@ -281,7 +262,7 @@ export default {
               let progressCallback = function(statusMsg) {
                 ctx.status = statusMsg;
               };
-              ctx.launchResult = await Launcher.launchNFTCollection(ctx.collectionName, ctx.collectionDescription, resources, Utils.toBaseUnit(ctx.mintPrice, 18).toString(), progressCallback);
+              ctx.launchResult = await NFTLauncher.launchNFTCollection(ctx.collectionName, ctx.collectionDescription, resources, Utils.toBaseUnit(ctx.mintPrice, 18).toString(), progressCallback);
               console.log(ctx.launchResult);
               ctx.loading = false;
               ctx.$eventBus.emit("loading", false);

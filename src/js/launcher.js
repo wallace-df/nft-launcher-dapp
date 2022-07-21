@@ -26,6 +26,7 @@ export default {
             description: collectionDescription,
             image: "ipfs://" + collectionImageCID
         };
+        let metadataFiles = [];
         metadataFiles.push(new File([JSON.stringify(collectionInfo, null, 2)], "collection.json"));
 
         let imagesCID = await nftStorageService.storeDirectory(resources.imageItems);
