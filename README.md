@@ -9,14 +9,21 @@ Vue.js powered webapp for the NFT Collection Launcher. It provides an interface 
 
 ![NFT Collection Launcher](/nft-collection-launcher.png?raw=true "NFT Collection Launcher")
 
-## Install dependencies
+### Install dependencies
 
 `yarn install`
 
-## Run locally
+
+### Set your NFTStorage API Key in the "resources/keys.json" file:
+
+`{
+    "nftStorage": "<YOUR NFT STORAGE API KEY>"
+}`
+
+### Run locally
 
 `yarn serve`
 
-## Build
+### Build
 
 `yarn build`
