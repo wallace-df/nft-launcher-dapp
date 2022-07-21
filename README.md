@@ -20,9 +20,10 @@ yarn install
 ```json
 {
     "nftStorage": "<YOUR NFT STORAGE API KEY>"
-}```
+}
+```
 
-### Run locally with hot-reload
+### Start development server with hot-reload
 
 ```shell
 yarn serve
