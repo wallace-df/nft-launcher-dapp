@@ -1,5 +1,5 @@
 # NFT Collection Launcher
-Frontend implementation for the NFT Collection Launcher using Vue.js
+Frontend implementation for the NFT Collection Launcher using Vue.js.
 
 ---
 
