@@ -17,7 +17,7 @@ export default {
     contractAddresses: {
         zkSync: {
             testnet: {
-                nftCollectionLauncher: "0x03f1c297B94de072c39c1974A2AB9d20750DFa3a"
+                nftCollectionLauncher: "0x8C0242a261f1BdD8A12a65e307f9F0Cc26C101B9"
             }
         },
         starkNet: {

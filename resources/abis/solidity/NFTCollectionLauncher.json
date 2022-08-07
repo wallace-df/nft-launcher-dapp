@@ -51,7 +51,45 @@
         "type": "uint256"
       }
     ],
-    "name": "launchCollection",
+    "name": "launchBaseCollection",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_symbol",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_contractURI",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_baseTokenURI",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxTokenSupply",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_mintPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "launchDelegatableCollection",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

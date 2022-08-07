@@ -76,7 +76,7 @@ export default {
             if (progressCallback) {
                 progressCallback("Deploying NFT Collection to zkSync...");
             }
-            let txHandle = await nftCollectionLauncher.launchCollection(collectionName, "NFT", contractMetadataURI, baseTokenURI, resources.metadataItems.length, mintPrice);
+            let txHandle = await nftCollectionLauncher.launchDelegatableCollection(collectionName, "NFT", contractMetadataURI, baseTokenURI, resources.metadataItems.length, mintPrice);
             let result = await txHandle.wait();
             let nftLaunchedEvent = result.events.filter(ev => ev.event === "NFTCollectionLaunched");
 
