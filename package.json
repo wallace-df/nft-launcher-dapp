@@ -1,6 +1,6 @@
 {
-  "name": "nft-collection-launcher",
-  "version": "0.1.0",
+  "name": "nft-launcher-dapp",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --skip-plugins @vue/cli-plugin-eslint",
