@@ -22,7 +22,7 @@ export default {
         },
         starkNet: {
             testnet: {
-                nftCollectionLauncher: "0x015053cecf6e053e91c1ceb1b4b6a181aea7e04c5997208da2852c084cd4ce94"
+                nftCollectionLauncher: "0x02359ff9ca3c91df0c85afbc6ca8a48a8c9da54742f2775dee4816bea24ed1a1"
             }
         }
     },
